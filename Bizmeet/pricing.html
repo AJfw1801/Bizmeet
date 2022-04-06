@@ -25,14 +25,17 @@
 
     <body>
         <script>
-            function initFreshChat() {
-              window.fcWidget.init({
-                token: "50e6c3d9-d08a-4c85-a2d6-9c7b62f35228",
-                host: "https://wchat.freshchat.com"
-              });
+            function initFreshChat() 
+          {
+                window.fcWidget.init({
+                token: "ff6e973c-0a71-430b-aaa6-ab4d72509b7d",
+                host: "https://wchat.in.freshchat.com"      
+          });
+          window.fcWidget.user.setFirstName("James Swan");
+          window.fcWidget.user.setEmail("james@freshworks.in");
             }
-            function initialize(i,t){var e;i.getElementById(t)?initFreshChat():((e=i.createElement("script")).id=t,e.async=!0,e.src="https://wchat.freshchat.com/js/widget.js",e.onload=initFreshChat,i.head.appendChild(e))}function initiateCall(){initialize(document,"Freshdesk Messaging-js-sdk")}window.addEventListener?window.addEventListener("load",initiateCall,!1):window.attachEvent("load",initiateCall,!1);
-          </script>
+            function initialize(i,t){var e;i.getElementById(t)?initFreshChat():((e=i.createElement("script")).id=t,e.async=!0,e.src="https://wchat.in.freshchat.com/js/widget.js",e.onload=initFreshChat,i.head.appendChild(e))}function initiateCall(){initialize(document,"Freshdesk Messaging-js-sdk")}window.addEventListener?window.addEventListener("load",initiateCall,!1):window.attachEvent("load",initiateCall,!1);
+          </script>          
         <!-- Nav Start -->
         <div id="nav">
             <div class="container-fluid">
